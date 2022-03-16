@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path')
 
+const PORT = process.env.PORT || 3000;
+
 const rutaPublic=path.resolve(__dirname,'./public');
 
  app.use(express.static(rutaPublic));
@@ -20,4 +22,4 @@ app.get('/login', (req, res) => {
 })
 
 
-app.listen(3030, ()=> console.log('Funciona server'));
+app.listen(PORT, ()=> console.log('Funciona server'));
