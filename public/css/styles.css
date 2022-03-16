@@ -1,0 +1,268 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    }
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+p{
+    font-size: 12px;
+}
+
+main section h2{
+    font-size: 24px;
+}
+
+.preciosArticulo{
+    font-size: 18px;
+    margin: 10px 0px;
+    width: 50%;
+}
+
+.descuntosArticulo{
+    width: 50%;
+    color: var(--Verde);
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.descripcionArticulo{
+    font-size: 16px;
+}
+
+
+/* header */
+
+
+
+header{
+    background-color: var(--Amarillo);
+    padding: 20px;
+}
+
+.imgLogo{
+    width: 45%;
+}
+
+
+
+.logo-Busqueda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-Busqueda p{
+    width: 100%;
+    text-align: center;
+}
+
+.buscador{
+    display: flex;
+    justify-content:space-around;
+    background-color: white;
+    width: 50%;
+    border-radius: 6px;
+}
+.buscador input{
+    width: 90%;
+    border: 0px;
+}
+.buscador button{
+    background-color: white;
+    border: 0px;
+}
+
+
+
+.contenedorBotonMenu{
+    text-align: center;
+}
+
+.contenedorBotonMenu button{
+    padding: 12px;
+    background-color: var(--Celeste);
+    border-radius: 15%;
+    border: 0px;
+    box-shadow: 0px 0px 2px 0px black;
+    color: white;
+    font-size: 15px;
+}
+
+
+.articulosBusqueda{
+    display: none;
+}
+
+.buscadorArticulo{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.buscadorCuenta{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:end;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+
+.articulosBusqueda a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 5px 0px;
+}
+
+
+
+.imagenesAl100{
+    margin: auto;
+    width: 100%;
+}
+
+
+/* main */
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--Gris-claro);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.cajaDelMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+}
+
+
+.articulos{
+    display: flex;        
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.contenedorTextoArticulo{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-top: solid 2px var(--Gris-claro);
+    padding: 15px;
+}
+
+.imagenes{
+    width: 100%;
+}
+
+.camionIcono{
+    background-color: white;
+    padding: 8px;
+    border: solid 1px var(--Verde);
+    border-radius: 50%;
+    font-size: 15px;
+    color: var(--Verde);
+    position: absolute;
+    right: 20px;
+    top: -18px;
+}
+
+.precio-Descuento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Fotter */
+
+
+.pieDePagina{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+}
+.iconosFotter{
+    color : var(--Celeste);
+    font-size: 2em;
+}
+.textoFotter{
+    margin: 0;
+}
+
+@media(min-width : 768px){
+    /* Header */
+    .imgLogo{
+        width: 30%;
+    }
+    .buscador{
+        width: 30%;
+    }
+    .logo-Busqueda p{
+        width: 32%;
+        text-align: left;
+    }
+    .articulosBusqueda{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contenedorBotonMenu{
+        display: none;
+    }
+    /* main */
+    .cajaDelMain h2{
+        width: 100%;
+    }
+    .articulos{
+        width: 45%;
+    }
+}
+@media(min-width: 1279px){
+    .articulos{
+        width: 22%;
+    }
+    .logo-Busqueda p{
+        font-size: 15px;
+        text-align: center;
+    }
+}
