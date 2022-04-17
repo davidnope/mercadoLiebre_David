@@ -232,7 +232,8 @@ main{
 @media(min-width : 768px){
     /* Header */
     .imgLogo{
-        width: 30%;
+        width: 15%;
+        min-width: 200px;
     }
     .buscador{
         width: 30%;
@@ -261,8 +262,11 @@ main{
     .articulos{
         width: 22%;
     }
-    .logo-Busqueda p{
+    .logo-Busqueda p{ 
         font-size: 15px;
         text-align: center;
+    }
+    .imgLogo{
+        max-width: 200px;
     }
 }

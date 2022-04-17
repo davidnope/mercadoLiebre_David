@@ -1,57 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/crearCuenta.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">  
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet" />
-    <title>Mercado Liebre</title>
-</head>
+<%-include('./partials/head')%>
 <body>
-    <header>
-        <div class="logo-Busqueda">
-            <a href="/" class="imgLogo"><img src="/img/logo-mercado-liebre.svg"></a>
-             <div class="buscador">
-                <input type="search" placeholder="Buscar productos, marcas y más">
-                <button class="iconoLupa"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-            
-        </div>
-        
-        <nav class = "articulosBusqueda">
-            <ul class = "buscadorArticulo">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-
-            <ul class = "buscadorCuenta">
-                <li><a href="/views/cuenta.html">Crea tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-                <li><a href="#">Ingresá</a> <i class="fa-solid fa-arrow-right-to-bracket"></i></li>
-                <li><a href="#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
-            </ul>
-            </nav>
-            <div class="contenedorBotonMenu">
-                <button>
-                    <i class="fa-solid fa-bars">
-                    </i>
-            </button>
-            </div>
-        </header>
+    <%-include('./partials/header')%>
         <main>
-        <form action="/" method="get">
+        <form action="/user/save" method="POST">
 
             <h2 id="titulo">Resgistro</h2>
             <!-- Nombre Apellido -->
@@ -59,18 +12,18 @@
             <div id="nombreApellido">
                 <div class="cajaIzq">
                     <label>Nombre</label> <br>
-                    <input type="text" name = "nombreApellido">
+                    <input type="text" name = "nombre">
                 </div>
                 <div class="cajaDer">
                     <label>Apellido</label> <br>
-                    <input type="text" name = "nombreApellido">
+                    <input type="text" name = "apellido">
                 </div>
             </div>
 
 
             <div id="nUsuario">
                 <label>Nombre de usuario</label><br>
-                <input type="text" name = "nombreUsuario">
+                <input type="text" name = "usuario">
             </div>
 
             <!-- /* Fecha - direccion */ -->
@@ -82,7 +35,7 @@
                 </div> 
                 <div class="cajaDer">
                     <label for="fDeNaci" >Dirección</label><br>
-                    <input type="text" name = "nombreUsuario">
+                    <input type="text" name = "direccion">
                 </div>    
             </div>
 
@@ -147,7 +100,7 @@
                 </div>
                 <div class="cajaDer">
                     <label >Confirmar contraseña: </label><br>
-                    <input type="password" name="contraseña">
+                    <input type="password" name="confirmarContraseña">
                 </div>
             </div>
             

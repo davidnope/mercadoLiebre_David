@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('./partials/head')%>
+
+    <body>
+        <%-include('./partials/header')%>
+            <main>
+                <img src="/img/img-home-banner.jpg" alt="" class="imagenesAl100">
+                <section class='cajaDelMain'>
+                    <h2>Basado en tu ultima visita</h2>
+                    <%for(let i=0; i < 4; i ++){ %>
+                        <div class='articulos'>
+                            <img src="/img/img-cafetera-moulinex.jpg" alt="Cafetera" class="imagenes">
+                            <div class=contenedorTextoArticulo>
+                                <button class="camionIcono">
+                                    <i class="fa-solid fa-truck"></i>
+                                </button>
+                                <div class="precio-Descuento">
+                                    <p class="preciosArticulo">
+                                        $6.770
+                                    </p>
+                                    <p class="descuntosArticulo">
+                                        40% OFF
+                                    </p>
+                                </div>
+                                <p class="descripcionArticulo">
+                                    Cafetera Moulinex
+                                </p>
+                            </div>
+                        </div>
+                        <%}%>
+                </section>
+                <section class='cajaDelMain'>
+                    <h2>Ofertas</h2>
+                    <%for(let i=0; i < 4; i ++){ %>
+                        <div class='articulos'>
+                            <img src="/img/img-cafetera-moulinex.jpg" alt="Cafetera" class="imagenes">
+                            <div class=contenedorTextoArticulo>
+                                <button class="camionIcono">
+                                    <i class="fa-solid fa-truck"></i>
+                                </button>
+                                <div class="precio-Descuento">
+                                    <p class="preciosArticulo">
+                                        $6.770
+                                    </p>
+                                    <p class="descuntosArticulo">
+                                        40% OFF
+                                    </p>
+                                </div>
+                                <p class="descripcionArticulo">
+                                    Cafetera Moulinex
+                                </p>
+                            </div>
+                        </div>
+                        <%}%>
+                    </div>
+                </section>
+            </main>
+            <%-include('./partials/footer')%>
+    </body>
+
+</html>
